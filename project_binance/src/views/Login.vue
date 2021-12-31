@@ -5,9 +5,11 @@
       <img class="navbar-img" v-bind:src="image" />
     </nav>
     <div class="navColor text-center">
-      <span
-        ><i class="fas fa-lock icolor"></i>
-        <p>URL verification: https://accounts.binance.com</p></span
+      <span>
+        <p>
+          <i class="fas fa-lock icolor"></i>URL verification:
+          https://accounts.binance.com
+        </p></span
       >
     </div>
     <div class="container d-flex align-items-center">
@@ -93,7 +95,8 @@ export default {
   background-color: rgb(250, 191, 0);
 }
 .icolor {
-  color: blue;
+  color: green;
+  padding: 10px;
 }
 .navColor {
   background-color: rgb(253, 248, 215);
@@ -102,6 +105,9 @@ export default {
   color: rgb(208, 150, 0);
 }
 input {
+  height: 47px;
+}
+button {
   height: 47px;
 }
 </style>
