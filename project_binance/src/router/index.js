@@ -1,6 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import Registration from "../views/Registration.vue";
+import Login from "../views/Login.vue";
+import ConfirmDevice from "../views/ConfirmDevice.vue";
+import MarketTrend from "../views/MarketTrend.vue";
 
 Vue.use(VueRouter);
 
@@ -19,11 +23,29 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
+  {
+    path: "/registration",
+    name: "Registration",
+    component: Registration,
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: Login,
+  },
+  {
+    path: "/confirmdevice",
+    name: "confirmdevice",
+    component: ConfirmDevice,
+  },
+  {
+    path: "/markettrend",
+    name: "markettrend",
+    component: MarketTrend,
+  },
 ];
 
 const router = new VueRouter({
-  mode: "history",
-  base: process.env.BASE_URL,
   routes,
 });
 

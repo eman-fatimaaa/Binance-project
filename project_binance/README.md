@@ -1,4 +1,4 @@
-# binance_project
+# project_binance
 
 ## Project setup
 ```
