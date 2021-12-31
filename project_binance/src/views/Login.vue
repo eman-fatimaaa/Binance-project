@@ -13,6 +13,7 @@
     <div class="container d-flex align-items-center">
       <div class="main mt-5">
         <form class="mt-5">
+          <!-- content container-->
           <div class="container">
             <h1>Binance Account Login</h1>
             <h6>
@@ -43,6 +44,7 @@
         </form>
       </div>
       <div>
+        <!-- Image Container -->
         <div class="secondDiv">
           <img class="img-fluid ml-5 qrImg mt-5" v-bind:src="qr" />
           <h5 class="text-center">Log in with QR code</h5>
@@ -63,6 +65,7 @@ export default {
   name: "navbar",
   data() {
     return {
+      //data properties for image binding
       image: require("@/assets/images/binance.png"),
       qr: require("@/assets/images/QRcode.webp"),
     };

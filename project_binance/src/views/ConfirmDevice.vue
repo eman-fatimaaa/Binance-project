@@ -8,6 +8,7 @@
     <div class="container d-flex align-items-center">
       <div class="main mt-3">
         <form class="mt-5">
+          <!-- Content Container-->
           <div class="container">
             <h1>Confirm New Device</h1>
             <h1>Login</h1>
@@ -59,6 +60,7 @@ export default {
   name: "navbar",
   data() {
     return {
+      // data properties for image binding
       image: require("@/assets/images/binance.png"),
     };
   },
